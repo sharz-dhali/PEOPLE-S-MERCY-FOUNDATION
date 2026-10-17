@@ -1,3 +1,5 @@
+import { publicAsset } from '../publicAsset.js'
+
 export default function Impact() {
   return (
     <article className="page">
@@ -15,7 +17,7 @@ export default function Impact() {
       <div className="container stack">
         <img
           className="photo wide"
-          src="/images/community-2.png"
+          src={publicAsset('images/community-2.png')}
           alt="Children in PMF school uniform outside the classrooms in Nyendo"
         />
 
@@ -109,7 +111,7 @@ export default function Impact() {
           </p>
           <img
             className="photo"
-            src="/images/livelihoods.png"
+            src={publicAsset('images/livelihoods.png')}
             alt="Hairdressing students practising braiding at People's Mercy Foundation"
           />
         </section>
@@ -124,13 +126,13 @@ export default function Impact() {
             startup tools for new students.
           </p>
           <div className="actions">
-            <a className="btn btn-primary" href="/docs/annual-report-2025.pdf">
+            <a className="btn btn-primary" href={publicAsset('docs/annual-report-2025.pdf')}>
               Download 2025 annual report
             </a>
-            <a className="btn btn-ghost dark" href="/docs/annual-review-2024.pdf">
+            <a className="btn btn-ghost dark" href={publicAsset('docs/annual-review-2024.pdf')}>
               Download 2024 review
             </a>
-            <a className="btn btn-ghost dark" href="/docs/teenage-mothers-project.pdf">
+            <a className="btn btn-ghost dark" href={publicAsset('docs/teenage-mothers-project.pdf')}>
               Teenage mothers proposal
             </a>
           </div>

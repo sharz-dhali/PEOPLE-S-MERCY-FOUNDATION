@@ -1,3 +1,5 @@
+import { publicAsset } from '../publicAsset.js'
+
 export default function About() {
   return (
     <article className="page">
@@ -16,7 +18,7 @@ export default function About() {
       <div className="container prose">
         <img
           className="photo wide"
-          src="/images/community-3.png"
+          src={publicAsset('images/community-3.png')}
           alt="A classroom moment and families at People's Mercy Foundation"
         />
         <h2>Our story</h2>

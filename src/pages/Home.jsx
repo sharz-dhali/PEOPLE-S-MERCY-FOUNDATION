@@ -1,9 +1,15 @@
 import { Link } from 'react-router-dom'
+import { publicAsset } from '../publicAsset.js'
 
 export default function Home() {
   return (
     <>
-      <section className="hero">
+      <section
+        className="hero"
+        style={{
+          backgroundImage: `linear-gradient(120deg, rgba(20, 51, 40, 0.88), rgba(31, 74, 58, 0.62)), url("${publicAsset('images/hero.png')}")`,
+        }}
+      >
         <div className="container hero-inner">
           <span className="kicker">Community-based organisation · Masaka</span>
           <h1>Lasting change for the most vulnerable in Nyendo.</h1>
@@ -65,9 +71,9 @@ export default function Home() {
             </div>
           </div>
           <div className="photo-grid">
-            <img className="photo" src="/images/community-1.png" alt="People's Mercy Foundation community work in Masaka" />
-            <img className="photo" src="/images/community-2.png" alt="Children and families supported by PMF" />
-            <img className="photo" src="/images/community-3.png" alt="Classroom and training activities" />
+            <img className="photo" src={publicAsset('images/community-1.png')} alt="People's Mercy Foundation community work in Masaka" />
+            <img className="photo" src={publicAsset('images/community-2.png')} alt="Children and families supported by PMF" />
+            <img className="photo" src={publicAsset('images/community-3.png')} alt="Classroom and training activities" />
           </div>
         </div>
       </section>
@@ -81,7 +87,7 @@ export default function Home() {
           </p>
           <div className="cards" style={{ marginTop: 28 }}>
             <article className="card">
-              <img src="/images/education.png" alt="Nursery and primary classes at PMF" />
+              <img src={publicAsset('images/education.png')} alt="Nursery and primary classes at PMF" />
               <div className="card-body">
                 <span className="tag">Education</span>
                 <h3>School, meals and sponsorship</h3>
@@ -93,7 +99,7 @@ export default function Home() {
               </div>
             </article>
             <article className="card">
-              <img src="/images/health.png" alt="Health outreach in Masaka" />
+              <img src={publicAsset('images/health.png')} alt="Health outreach in Masaka" />
               <div className="card-body">
                 <span className="tag">Health</span>
                 <h3>Clinics, clubs and awareness</h3>
@@ -105,7 +111,7 @@ export default function Home() {
               </div>
             </article>
             <article className="card">
-              <img src="/images/livelihoods.png" alt="Vocational skills training" />
+              <img src={publicAsset('images/livelihoods.png')} alt="Vocational skills training" />
               <div className="card-body">
                 <span className="tag">Livelihoods</span>
                 <h3>Skills that restore hope</h3>

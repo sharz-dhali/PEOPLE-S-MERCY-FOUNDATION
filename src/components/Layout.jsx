@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link, NavLink, Outlet } from 'react-router-dom'
+import { publicAsset } from '../publicAsset.js'
 
 const nav = [
   { to: '/', label: 'Home' },
@@ -21,7 +22,7 @@ export default function Layout() {
       <header className="header">
         <div className="container header-inner">
           <Link to="/" className="brand" onClick={() => setOpen(false)}>
-            <img className="brand-logo" src="/images/logo.png" alt="" />
+            <img className="brand-logo" src={publicAsset('images/logo.png')} alt="" />
             <span className="brand-text">
               <strong>People&apos;s Mercy Foundation</strong>
               <em>Nyendo, Masaka · Uganda</em>

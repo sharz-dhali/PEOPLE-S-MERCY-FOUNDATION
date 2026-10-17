@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { publicAsset } from '../publicAsset.js'
 
 export default function Contact() {
   const [sent, setSent] = useState(false)
@@ -44,7 +45,7 @@ export default function Contact() {
           </p>
           <img
             className="photo"
-            src="/images/community-1.png"
+            src={publicAsset('images/community-1.png')}
             alt="Nyendo, Masaka — the community People's Mercy Foundation serves"
           />
         </div>
