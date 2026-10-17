@@ -7,12 +7,12 @@ export default function Home() {
       <section
         className="hero"
         style={{
-          backgroundImage: `linear-gradient(120deg, rgba(20, 51, 40, 0.88), rgba(31, 74, 58, 0.62)), url("${publicAsset('images/hero.png')}")`,
+          backgroundImage: `linear-gradient(90deg, rgba(13, 39, 29, 0.88) 0%, rgba(20, 51, 40, 0.72) 52%, rgba(20, 51, 40, 0.28) 100%), url("${publicAsset('images/hero.png')}")`,
         }}
       >
         <div className="container hero-inner">
-          <span className="kicker">Community-based organisation · Masaka</span>
-          <h1>Lasting change for the most vulnerable in Nyendo.</h1>
+          <span className="kicker">Rooted in Nyendo · Serving Masaka since 2002</span>
+          <h1>Every child deserves the chance to thrive.</h1>
           <p>
             People&apos;s Mercy Foundation supports children, highly vulnerable
             women and families living in urban slums through education, health,
@@ -20,12 +20,13 @@ export default function Home() {
           </p>
           <div className="actions">
             <Link className="btn btn-primary" to="/donate">
-              Support our work
+              Support our work <span aria-hidden="true">→</span>
             </Link>
-            <Link className="btn btn-ghost" to="/programmes">
-              See programmes
+            <Link className="btn btn-ghost" to="/impact">
+              See our impact
             </Link>
           </div>
+          <p className="hero-note">Locally led. Community focused. Building brighter futures together.</p>
         </div>
       </section>
 
@@ -51,6 +52,7 @@ export default function Home() {
       <section className="section">
         <div className="container grid-2">
           <div>
+            <p className="eyebrow">Why we are here</p>
             <h2 className="section-title">A personal, community-rooted response to poverty</h2>
             <p className="lede">
               Nyendo slum is the second largest in Masaka. Around 15,000 people
@@ -80,7 +82,8 @@ export default function Home() {
 
       <section className="section" style={{ background: 'var(--sand)' }}>
         <div className="container">
-          <h2 className="section-title">How we help</h2>
+          <p className="eyebrow">Our work</p>
+          <h2 className="section-title">Practical support. Lasting opportunity.</h2>
           <p className="lede">
             Support is practical and long-term: school, meals, health care,
             skills and a pathway out of poverty.
@@ -153,6 +156,23 @@ export default function Home() {
             <Link className="btn btn-primary" to="/impact">
               Read the 2025 report
             </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="home-cta">
+        <div className="container home-cta-inner">
+          <div>
+            <p className="eyebrow">Be part of the change</p>
+            <h2 className="section-title">A little support can open a big door.</h2>
+            <p>
+              Help children learn, families access care and young people build
+              skills for a more independent future.
+            </p>
+          </div>
+          <div className="actions">
+            <Link className="btn btn-primary" to="/donate">How to give</Link>
+            <Link className="btn btn-ghost dark" to="/contact">Talk to our team</Link>
           </div>
         </div>
       </section>

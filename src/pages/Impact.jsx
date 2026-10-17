@@ -14,15 +14,51 @@ export default function Impact() {
         </div>
       </header>
 
-      <div className="container stack">
+      <div className="container impact-page">
+        <section className="impact-overview" aria-labelledby="impact-overview-title">
+          <div className="impact-overview-copy">
+            <p className="eyebrow">A year of progress</p>
+            <h2 id="impact-overview-title">Community-led work, made possible together.</h2>
+            <p>
+              In 2025, PMF moved all operations to its own land in Nyendo,
+              supporting children and families through education, social work
+              and practical care.
+            </p>
+          </div>
+          <div className="impact-highlights">
+            <article className="impact-highlight">
+              <span>350+</span>
+              <p>children and families supported</p>
+            </article>
+            <article className="impact-highlight">
+              <span>292</span>
+              <p>children reached through sponsorship</p>
+            </article>
+            <article className="impact-highlight">
+              <span>20</span>
+              <p>local staff employed</p>
+            </article>
+            <article className="impact-highlight">
+              <span>5</span>
+              <p>new classrooms in the Nyendo block</p>
+            </article>
+          </div>
+        </section>
+
         <img
-          className="photo wide"
+          className="photo wide impact-photo"
           src={publicAsset('images/community-2.png')}
           alt="Children in PMF school uniform outside the classrooms in Nyendo"
         />
 
         <section className="programme">
-          <h2>2025 in numbers</h2>
+          <div className="programme-heading">
+            <div>
+              <p className="eyebrow">Transparency</p>
+              <h2>How funds were spent in 2025</h2>
+            </div>
+            <p>Reported programme and operating costs: UGX 476,715,108</p>
+          </div>
           <div className="table-wrap">
             <table>
               <thead>
