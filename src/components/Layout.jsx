@@ -7,7 +7,7 @@ const nav = [
   { to: '/about', label: 'About' },
   { to: '/programmes', label: 'Programmes' },
   { to: '/impact', label: 'Impact' },
-  { to: '/donate', label: 'Donate' },
+  { to: '/donate', label: 'Donate now' },
   { to: '/contact', label: 'Contact' },
 ]
 
@@ -43,6 +43,7 @@ export default function Layout() {
                 key={item.to}
                 to={item.to}
                 end={item.to === '/'}
+                className={item.to === '/donate' ? 'nav-donate' : undefined}
                 onClick={() => setOpen(false)}
               >
                 {item.label}

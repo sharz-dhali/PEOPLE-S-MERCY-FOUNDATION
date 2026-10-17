@@ -133,6 +133,18 @@ a {
   color: var(--forest);
 }
 
+.nav a.nav-donate,
+.nav a.nav-donate:hover,
+.nav a.nav-donate.active {
+  background: var(--clay);
+  color: #fff;
+}
+
+.nav a.nav-donate:hover,
+.nav a.nav-donate.active {
+  background: var(--clay-dark);
+}
+
 .nav-toggle {
   display: none;
   border: 1px solid var(--line);
