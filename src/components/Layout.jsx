@@ -20,12 +20,22 @@ export default function Layout() {
         Skip to content
       </a>
       <header className="header">
+        <div className="header-meta">
+          <div className="container header-meta-inner">
+            <span>Locally led. Community focused.</span>
+            <span>
+              Nyendo, Masaka, Uganda
+              <span className="meta-separator" aria-hidden="true">·</span>
+              <a href="tel:+256789375818">+256 789 375 818</a>
+            </span>
+          </div>
+        </div>
         <div className="container header-inner">
           <Link to="/" className="brand" onClick={() => setOpen(false)}>
             <img className="brand-logo" src={publicAsset('images/logo.png')} alt="" />
             <span className="brand-text">
               <strong>People&apos;s Mercy Foundation</strong>
-              <em>Nyendo, Masaka · Uganda</em>
+              <em>Every child deserves a chance to thrive</em>
             </span>
           </Link>
           <button
@@ -58,6 +68,7 @@ export default function Layout() {
       <footer className="footer">
         <div className="container footer-grid">
           <div>
+            <img className="footer-logo" src={publicAsset('images/logo.png')} alt="" />
             <p className="footer-name">People&apos;s Mercy Foundation</p>
             <p>
               A registered community-based organisation in Nyendo, Masaka. We
